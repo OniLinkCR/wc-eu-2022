@@ -44,3 +44,13 @@ function wp_eu_child_theme_style() {
 add_action( 'wp_enqueue_scripts', 'wp_eu_child_theme_style' );
 
 
+function wceu_trips_pagesize ( $query ) {
+    if ( ! is_admin()  && is_post_type_archive( 'trips' ) ) {
+        // Display 5 posts for a custom post type called 'trips'
+        $query->set( 'posts_per_page', 5 );
+        return;
+    }
+}
+add_action( 'pre_get_posts', 'wceu_trips_pagesize ', 1 );
+
+

@@ -80,9 +80,10 @@
         'post_type'         => array( 'post', 'trips', 'food'),
         'posts_per_page'    => '-1',
         'orderby'           => 'rand',
-        'meta_key'         => '_title',
-        'meta_value'       => 'blue',
-        'no_found_rows' => true
+        'meta_key'          => '_title',
+        'meta_value'        => 'blue',
+        'no_found_rows'     => true,
+        'post__not_in'      => array ('1'),
     );
  
 

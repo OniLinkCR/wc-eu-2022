@@ -4,6 +4,7 @@
 # ignore everything in the "wp-content" directory, except:
 # "mu-plugins", "plugins", "themes" directory
 wp-content/*
+wp-content/themes/wc-eu-2022/library/functionality/*
 !wp-content/mu-plugins/
 !wp-content/plugins/
 !wp-content/themes/
@@ -13,6 +14,7 @@ wp-content/plugins/hello.php
 
 # ignore specific themes
 wp-content/themes/twenty*/
+
 
 # ignore node dependency directories
 node_modules/
